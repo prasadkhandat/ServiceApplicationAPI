@@ -7,3 +7,12 @@ C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LicenseLibrary\bin\De
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LicenseLibrary\bin\Debug\LogLibrary.dll
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LicenseLibrary\bin\Debug\DataLayer.pdb
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LicenseLibrary\bin\Debug\LogLibrary.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\bin\Debug\LicenseLibrary.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\bin\Debug\LicenseLibrary.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\bin\Debug\DataLayer.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\bin\Debug\LogLibrary.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\bin\Debug\DataLayer.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\bin\Debug\LogLibrary.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\obj\Debug\LicenseLibrary.csprojResolveAssemblyReference.cache
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\obj\Debug\LicenseLibrary.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\LicenseLibrary\obj\Debug\LicenseLibrary.pdb

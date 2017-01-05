@@ -15,10 +15,6 @@ namespace ServiceAppAPI
     {
         public void Configuration(IAppBuilder app)
         {
-            //HttpConfiguration config = new HttpConfiguration();
-            //WebApiConfig.Register(config);
-            //app.UseWebApi(config);
-
             HttpConfiguration config = new HttpConfiguration();
 
             ConfigureOAuth(app);
@@ -36,8 +32,9 @@ namespace ServiceAppAPI
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/Authenticate"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
-                Provider = new ApplicationOAuthProvider()
+                Provider = new ApplicationOAuthProvider()                
             };
+            
             
             app.UseOAuthAuthorizationServer(OAuthServerOptions);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());

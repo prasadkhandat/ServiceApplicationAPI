@@ -24,20 +24,17 @@ namespace ServiceAppAPI
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            //config.Routes.MapHttpRoute(
+            //    name: "PublicAPI",
+            //    routeTemplate: "{controller}/{id}",
+            //    defaults: new { controller = "Home", id = RouteParameter.Optional }
+            //);
+
             config.Routes.MapHttpRoute(
                 name: "PublicAPI",
                 routeTemplate: "{controller}/{id}",
-                defaults: new { controller = "Home", id = RouteParameter.Optional }
+                defaults: new { controller = "Values", id = RouteParameter.Optional }
             );
-
-            config.Routes.MapHttpRoute(
-               name: "PrivateDefaultApi",
-               routeTemplate: "private/{controller}/{id}",
-               defaults: new { id = RouteParameter.Optional },
-               constraints: null,
-               handler: new AuthenticationHandler() { InnerHandler = new HttpControllerDispatcher(config) }
-           );
-
         }
     }
 }

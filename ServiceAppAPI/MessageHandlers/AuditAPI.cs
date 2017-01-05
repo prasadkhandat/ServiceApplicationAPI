@@ -25,21 +25,20 @@ namespace ServiceAppAPI.MessageHandlers
             {
                 ReqData = await request.Content.ReadAsStringAsync();
             }
-            catch { }           
-            /*
-            if (request.RequestUri.LocalPath.ToString().ToLower().Contains("private/"))
+            catch { }
+            /****************************** Authorization header check *************************************/
+
+            if (request.Headers.Authorization!=null && request.Headers.Authorization.Scheme.ToLower().Equals("bearer"))
             {
                 bool Authenticated = false;
                 try
                 {
-                    AuthToken = request.Headers.GetValues("authtoken").First<string>();
-                    UserEmail = request.Headers.GetValues("uname").First<string>();
+                    AuthToken = request.Headers.Authorization.Parameter;                    
                     DBServerIdentification objData = new DBServerIdentification();
-                    objData = await AuditLogs.getIdentificationInfo(UserEmail, AuthToken);
+                    objData = await AuditLogs.getIdentificationInfo(AuthToken);
                     if (objData.Status == "Success")
                     {
-                        Authenticated = true;
-                        request.Headers.Add("MOBJID", objData.ObjectID);
+                        Authenticated = true;                       
                     }
                     else
                     {
@@ -58,7 +57,7 @@ namespace ServiceAppAPI.MessageHandlers
                 }
             }
             else
-            */
+            /************************************************/
             {
                 response = await base.SendAsync(request, cancellationToken);
             }

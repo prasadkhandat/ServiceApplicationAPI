@@ -92,7 +92,7 @@ namespace ServiceAppAPI.HelperClasses
             { }
         }
 
-        public static async Task<DBServerIdentification> getIdentificationInfo(string userName, string AuthToken)
+        public static async Task<DBServerIdentification> getIdentificationInfo(string AuthToken)
         {
             
             DBServerIdentification obj = new DBServerIdentification() {  Status = "Error" };
@@ -113,7 +113,7 @@ namespace ServiceAppAPI.HelperClasses
                     DateTime fromDate = Convert.ToDateTime(tmpData["TokenGenTime"].ToString());
                     DateTime toDate = Convert.ToDateTime(tmpData["TokenExpTime"].ToString());
                    
-                    if ((toDate - fromDate).TotalMinutes > 0 && lc.CheckToken(userName, AuthToken))
+                    if ((toDate - fromDate).TotalMinutes > 0)
                         obj.Status = "Success";
                     else
                         obj.Status = "TokenExpired";
@@ -126,9 +126,9 @@ namespace ServiceAppAPI.HelperClasses
 
         public static async Task<DBServerIdentification> getIdentificationInfobyID(string AuthToken)
         {
-            DBServerIdentification obj = new DBServerIdentification() {Status = "Error" };
-            /*
-            LicenseLibrary.SecureLicenseService sls = new LicenseLibrary.SecureLicenseService();
+            DBServerIdentification obj = new DBServerIdentification() { Status = "Error" };
+
+
             try
             {
                 var client = new MongoClient(MongoConnectionString);
@@ -140,20 +140,20 @@ namespace ServiceAppAPI.HelperClasses
                 foreach (var tmpData in list)
                 {
                     obj.ObjectID = tmpData["_id"].ToString();
-                    obj.DBString = tmpData["DBString"].ToString();
-                    obj.MasterCustomerID = tmpData["MasterCustomerID"].ToString();
+
+
                     obj.EmailID = tmpData["EmailID"].ToString();
                     obj.UserID = tmpData["UserID"].ToString();
-                    obj.Specility = tmpData["Specility"].ToString();
+
                     DateTime fromDate = Convert.ToDateTime(tmpData["TokenGenTime"].ToString());
                     DateTime toDate = Convert.ToDateTime(tmpData["TokenExpTime"].ToString());
-                    obj.AllPracticeString = tmpData["AllPracticeList"].ToString();
+
                     obj.Status = "Success";
 
                 }
             }
             catch (Exception ex) { }
-            */
+
             return obj;
         }
 

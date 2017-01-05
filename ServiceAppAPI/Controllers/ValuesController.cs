@@ -1,22 +1,32 @@
-﻿using System;
+﻿using ServiceAppAPI.HelperClasses;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 
 namespace ServiceAppAPI.Controllers
 {
-    [Authorize]
-    [RoutePrefix("private")]
+    //[Authorize]
     public class ValuesController : ApiController
     {
+
         //
-        // GET api/values
-        [Route("values")]
-        public IEnumerable<string> Get()
+        // GET api/values        
+        public HttpResponseMessage Get()
         {
-            return new string[] { "value1", "value2" };
+            //DBServerIdentification data = await AuditLogs.getIdentificationInfo(Request.Headers.Authorization.Parameter);
+            //return Ok(new string[] { "value1", "value2" });
+            var response = new HttpResponseMessage(HttpStatusCode.OK);
+            string viewPath = HttpContext.Current.Server.MapPath(@"~/Views/Home/Index.cshtml");
+            var template = File.ReadAllText(viewPath);
+            response.Content = new StringContent(template);
+            response.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("text/html");
+            return response;
         }
 
         // GET api/values/5

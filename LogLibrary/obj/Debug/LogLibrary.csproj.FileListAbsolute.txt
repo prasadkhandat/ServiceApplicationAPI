@@ -1,0 +1,4 @@
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LogLibrary\bin\Debug\LogLibrary.dll
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LogLibrary\bin\Debug\LogLibrary.pdb
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LogLibrary\obj\Debug\LogLibrary.dll
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\LogLibrary\obj\Debug\LogLibrary.pdb

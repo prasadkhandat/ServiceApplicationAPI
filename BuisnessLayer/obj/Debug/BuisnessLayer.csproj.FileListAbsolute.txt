@@ -1,0 +1,5 @@
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\bin\Debug\BuisnessLayer.dll
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\bin\Debug\BuisnessLayer.pdb
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\obj\Debug\BuisnessLayer.csprojResolveAssemblyReference.cache
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\obj\Debug\BuisnessLayer.dll
+C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\obj\Debug\BuisnessLayer.pdb

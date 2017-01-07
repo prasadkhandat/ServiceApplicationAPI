@@ -66,7 +66,7 @@ namespace ServiceAppAPI.HelperClasses
             { }
         }
 
-        public static async Task insertCustomerAuthCall(string UserID, string URL,string EmailID, string PhoneNumber, string AuthToken, string RemoteIP)
+        public static async Task insertCustomerAuthCall(string UserID, string URL,string EmailID, string PhoneNumber, string AuthToken, string RemoteIP,string UID,string role)
         {
             try
             {
@@ -77,6 +77,8 @@ namespace ServiceAppAPI.HelperClasses
                 var document = new BsonDocument {
                     { "AuthToken",AuthToken},
                     { "UserName",UserID},
+                    { "UID",UID},
+                    { "role",role},
                     { "URL",URL},
                     { "EmailID",EmailID},
                     { "PhoneNumber",PhoneNumber},
@@ -110,9 +112,11 @@ namespace ServiceAppAPI.HelperClasses
                     obj.ObjectID = tmpData["_id"].ToString();                    
                     obj.EmailID = tmpData["EmailID"].ToString();
                     obj.UserID = tmpData["UserName"].ToString();
+                    obj.UID= tmpData["UID"].ToString();
+                    obj.Role = tmpData["role"].ToString();
                     DateTime fromDate = Convert.ToDateTime(tmpData["TokenGenTime"].ToString());
                     DateTime toDate = Convert.ToDateTime(tmpData["TokenExpTime"].ToString());
-                   
+                                       
                     if ((toDate - fromDate).TotalMinutes > 0)
                         obj.Status = "Success";
                     else
@@ -165,5 +169,7 @@ namespace ServiceAppAPI.HelperClasses
         public string UserID { get; set; }
         public string EmailID { get; set; }
         public string Status { get; set; }
+        public string UID { get; set; }
+        public string Role { get; set; }        
     }
 }

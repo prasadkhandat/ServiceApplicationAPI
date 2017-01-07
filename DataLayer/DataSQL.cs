@@ -12,7 +12,8 @@ namespace DataLayer
     public class DataSQL
     {
         private static string mysqlConnectionString = "Host=localhost;Port=3306;Database=serviceapp;Uid=root;Pwd=PRK@1987;default command timeout=3600;";
-
+        public bool isError = false;
+        public string errorMessage = string.Empty;
         public DataTable getData(string sqlQuery)
         {
             DataTable dt = new DataTable();
@@ -25,6 +26,8 @@ namespace DataLayer
             }
             catch (Exception ex)
             {
+                errorMessage = ex.Message;
+                isError = true;
                 FileLogger.AppendLog("Error", "DataLayer >> DataSQL >> getData >> ", ex.Message);
             }
             return dt;

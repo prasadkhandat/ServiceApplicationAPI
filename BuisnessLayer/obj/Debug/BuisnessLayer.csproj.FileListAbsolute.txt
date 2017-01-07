@@ -3,3 +3,12 @@ C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\bin\Deb
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\obj\Debug\BuisnessLayer.csprojResolveAssemblyReference.cache
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\obj\Debug\BuisnessLayer.dll
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\BuisnessLayer\obj\Debug\BuisnessLayer.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\bin\Debug\BuisnessLayer.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\bin\Debug\BuisnessLayer.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\bin\Debug\DataLayer.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\bin\Debug\LogLibrary.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\bin\Debug\DataLayer.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\bin\Debug\LogLibrary.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\obj\Debug\BuisnessLayer.csprojResolveAssemblyReference.cache
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\obj\Debug\BuisnessLayer.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\BuisnessLayer\obj\Debug\BuisnessLayer.pdb

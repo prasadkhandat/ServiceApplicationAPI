@@ -66,7 +66,7 @@ namespace ServiceAppAPI.Providers
 
                 try
                 {
-                    await AuditLogs.insertCustomerAuthCall(context.UserName, context.Request.Host.Value, ld.Email, ld.Phone, accessToken, context.Request.RemoteIpAddress);
+                    await AuditLogs.insertCustomerAuthCall(context.UserName, context.Request.Host.Value, ld.Email, ld.Phone, accessToken, context.Request.RemoteIpAddress,ld.UID,ld.Role);
                 }
                 catch (Exception ex)
                 { }

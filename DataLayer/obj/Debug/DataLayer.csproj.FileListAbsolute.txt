@@ -5,3 +5,10 @@ C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\DataLayer\obj\Debug\D
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\DataLayer\obj\Debug\DataLayer.pdb
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\DataLayer\bin\Debug\LogLibrary.dll
 C:\work\ServiceApplication\API\ServiceAppAPI\ServiceAppAPI\DataLayer\bin\Debug\LogLibrary.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\DataLayer\bin\Debug\DataLayer.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\DataLayer\bin\Debug\DataLayer.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\DataLayer\bin\Debug\LogLibrary.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\DataLayer\bin\Debug\LogLibrary.pdb
+C:\work\personal\GitHub\ComputerServiceApp\API\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\work\personal\GitHub\ComputerServiceApp\API\DataLayer\obj\Debug\DataLayer.dll
+C:\work\personal\GitHub\ComputerServiceApp\API\DataLayer\obj\Debug\DataLayer.pdb

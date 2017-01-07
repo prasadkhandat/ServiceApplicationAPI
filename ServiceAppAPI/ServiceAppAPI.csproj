@@ -245,7 +245,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\BranchController.cs" />
+    <Compile Include="Controllers\OfficeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Enums\Enumerators.cs" />
     <Compile Include="HelperClasses\AuditLogs.cs" />
     <Compile Include="MessageHandlers\AuditAPI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -33,6 +33,7 @@ namespace LicenseLibrary
                         ld.Email = dt.Rows[0]["Email"].ToString();
                         ld.Phone = dt.Rows[0]["Phone"].ToString();
                         ld.Role = dt.Rows[0]["Role"].ToString();
+                        ld.UID = dt.Rows[0]["User_ID"].ToString();
                         //ld.AuthToken = GenerateAuthToken(username);
                     }
                 }
@@ -182,5 +183,6 @@ namespace LicenseLibrary
         public string Role { get; set; }
         //public string AuthToken { get; set; }
         public bool isAuthenticated { get; set; }
+        public string UID { get; set; }
     }
 }
